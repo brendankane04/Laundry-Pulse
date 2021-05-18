@@ -12,7 +12,7 @@ This file system is a project which can be conveniently opened in Atmel Studio 7
 -**Error.c:** Error Messages & blinking \
 -**ESP82_Drv.c:** Driver for the ESP-01 board which houses the ESP8266 chip. Allows communication between the main device & the external peripheral \
 -**int.c:** Code for initializing & using an interrupt triggered on the button press \
--**main.c:** main file
+-**main.c:** main file \
 -**uart.c:** Initializes the UART peripheral & directs STDIO I/O toward UART
 
 ### Backend
