@@ -110,7 +110,6 @@ void ESP01_Send_CMD_Args(char *cmd, char **args, int num)
 }
 
 //Complete a basic sequence of commands to send a TCP message through the ESP8266 to a specified server.
-//TODO:: Make the size of the data sent variable
 void ESP01_Send_Data(char *mssg)
 {
 	//Initialize the args array for the login data
