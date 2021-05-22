@@ -37,7 +37,8 @@ void ESP01_init(char *_network_name, char *_password)
 
 //halt the device's operation until an "OK" is received on the UART bus.
 //"OK" is the ESP8266's acknowledgment message of a successful command.
-void ESP01_Loop_Until_OK()
+//"ERROR" is what the ESP8266 sends in response if the command fails.
+char ESP01_Loop_Until_OK()
 {
 	char esp_resp[64];
 	int res;
@@ -46,9 +47,15 @@ void ESP01_Loop_Until_OK()
 		//Read in a word from the ESP
 		scanf("%s", esp_resp);	
 
+		//Check if an "ERROR" message was received & cancel if it's found
+		res = (int) strstr(esp_resp, "ERROR");
+		if(res) return -1;
+
 		//If the word is or contains "OK", return 0
 		res = (int) strstr(esp_resp, "OK");
 	} while (!res);
+
+	return 0;
 }
 
 //Turn the ESP8266 on & reset it to avoid conflicts
@@ -76,8 +83,10 @@ void ESP01_Set_EN(char status)
 //Send a command to the ESP01 & move on when it's OK'd the operation
 void ESP01_Send_CMD(char *cmd)
 {
-	puts(cmd);
-	ESP01_Loop_Until_OK();
+	do 
+	{
+		puts(cmd);
+	} while (ESP01_Loop_Until_OK());//If you get an error message, send command again
 }
 
 //Send a command with 'num' number of arguments

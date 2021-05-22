@@ -14,7 +14,7 @@ void ESP01_init();
 void ESP01_Set_EN(char status);
 void ESP01_Send_CMD(char *cmd);
 void ESP01_Send_CMD_Args(char *cmd, char**args, int num);
-void ESP01_Loop_Until_OK();
+char ESP01_Loop_Until_OK();
 void ESP01_Send_Data(char *mssg);
 
 #endif

@@ -15,8 +15,8 @@
 #include "Error.h"
 
 //Login information for your local network goes here
-#define NETWORK_NAME "name of network"
-#define NETWORK_PASSWORD "password for the network"
+#define NETWORK_NAME "LDS"
+#define NETWORK_PASSWORD "goterps_3141"
 
 int main(void) 
 {
