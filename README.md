@@ -19,9 +19,15 @@ This file system is a project which can be conveniently opened in Atmel Studio 7
 
 This python script needs to be run on loop in a local server on the network
 
+## Files
+
 -**server.py:** Runs a local TCP server on the same network as the "Laundry Pulse" device
 
 ### Schematics
 
-To be uploaded later...
+The schematics were made with KiCAD and can be viewed with any program which can edit .sch files.
 
+## Files
+
+**Schematics.sch:** The schematic listings for the whole project & can be edited
+**Schematics.pdf:** A PDF for readability
