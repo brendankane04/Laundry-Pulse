@@ -30,5 +30,5 @@ The schematics were made with KiCAD and can be viewed with any program which can
 
 ### Files
 
-**Schematics.sch:** The schematic listings for the whole project & can be edited
+**Schematics.sch:** The schematic listings for the whole project & can be edited \
 **Schematics.pdf:** A PDF for readability
