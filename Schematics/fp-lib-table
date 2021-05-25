@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Laundry_Pulse_Lib)(type KiCad)(uri ${KIPRJMOD}/Laundry_Pulse_Lib.pretty)(options "")(descr ""))
+)
