@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name New_Library)(type Legacy)(uri ${KIPRJMOD}/New_Library.lib)(options "")(descr ""))
   (lib (name Laundry_Pulse_Lib)(type Legacy)(uri ${KIPRJMOD}/Laundry_Pulse_Lib.lib)(options "")(descr ""))
+  (lib (name Schematics-rescue)(type Legacy)(uri ${KIPRJMOD}/Schematics-rescue.lib)(options "")(descr ""))
 )
