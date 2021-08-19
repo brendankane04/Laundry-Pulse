@@ -1,7 +1,7 @@
 # Laundry-Pulse
 Laundry Pulse is a simple & convenient button which when pressed will tell your roommates to move their things in a *pulse*!
 
-Practically, this repository is composed of the code &amp; Schematics for a button which, when pressed, notifies all users that someone needs to remove their laundry from the machine.
+Practically, this repository is composed of the code &amp; Schematics for a button which, when pressed, notifies all users that someone needs to remove their laundry from the machine. It can also be modified to send other messages with a convenient button press.
 
 
 ## Firmware
